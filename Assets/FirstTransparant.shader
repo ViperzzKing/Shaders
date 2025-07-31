@@ -6,10 +6,14 @@ Shader "Unlit/FirstTransparant"
     }
     SubShader
     {
-        Tags { "RenderType"="Opaque" }
+        Tags { "RenderType"="Transparant"
+                "Queue"="Transparant" }
 
         Pass
         {
+            ZWrite Off
+            Blend SrcAlpha OneMinusSrcAlpha // Traditonal Transparancy
+            //Blend One One // Additive
             CGPROGRAM
             #pragma vertex vert
             #pragma fragment frag
@@ -42,7 +46,7 @@ Shader "Unlit/FirstTransparant"
             fixed4 frag (v2f i) : SV_Target
             {
                 // sample the texture
-                fixed4 col = tex2D(_MainTex, i.uv);
+                fixed4 col = float4(1, 0, 0, 0.5);
                 return col;
             }
             ENDCG
