@@ -843,8 +843,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.12466885, y: 0.83346295, z: -0.20954499, w: -0.49587104}
-  m_LocalPosition: {x: 4.3136864, y: 3.743649, z: 3.609083}
+  m_LocalRotation: {x: -0.12712333, y: 0.6568259, z: -0.1135788, w: -0.73451984}
+  m_LocalPosition: {x: 3.9140873, y: 2.3080454, z: -10.26391}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -862,6 +862,7 @@ GameObject:
   - component: {fileID: 1134894415}
   - component: {fileID: 1134894414}
   - component: {fileID: 1134894413}
+  - component: {fileID: 1134894417}
   m_Layer: 0
   m_Name: Quad (1)
   m_TagString: Untagged
@@ -959,6 +960,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!114 &1134894417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1134894412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 949f25bb7aa577b47903e02c96f0ca08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
 --- !u!1 &1357501433
 GameObject:
   m_ObjectHideFlags: 0
@@ -1190,6 +1204,7 @@ GameObject:
   - component: {fileID: 1772471869}
   - component: {fileID: 1772471868}
   - component: {fileID: 1772471867}
+  - component: {fileID: 1772471871}
   m_Layer: 0
   m_Name: Quad (2)
   m_TagString: Untagged
@@ -1287,6 +1302,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!114 &1772471871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1772471866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 949f25bb7aa577b47903e02c96f0ca08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0.33
 --- !u!1 &2099963580
 GameObject:
   m_ObjectHideFlags: 0
