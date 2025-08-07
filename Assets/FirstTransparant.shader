@@ -6,12 +6,38 @@ Shader "Unlit/FirstTransparant"
     }
     SubShader
     {
-        Tags { "RenderType"="Transparant"
-                "Queue"="Transparant" }
+        Tags { "RenderType"="Transparent"
+                "Queue"="Transparent" }
 
         Pass
         {
+            // Src value(Source) 
+                // Frag Shader
+            // Dst value(Destination)
+                // Render Target
+            
+            // (Src * A)    +/-    (Dst * B)
+
+            // (Src *1) + (Dst * 1) // Blend One One / Additive
+            
+            // Blend DstColor Zero // Multiplicitive
+            // (Src * DstColor) + (Dst * 0)
+            
+            // Blend DstColor SrcColor
+            // (Src * DstColor) + (Dst * SrcColor)
+
+            // Blend OneMinusDstColor One // Soft Additive
+            // (Src * 1-Dst) + (Dst * 1)
+            
+            // Blend SrcAlpha OneMinusSrcAlpha // Traditional
+            // (Src * SrcAlpha) + (Dst * OneMinusSrcAlpha)
+            
             ZWrite Off
+            //BlendOp RevSub // Dst - Src
+            //BlendOp Sub // Src - Dst
+            //Blend One One
+            //Blend DstColor SrcColor
+            //Blend DstColor Zero
             Blend SrcAlpha OneMinusSrcAlpha // Traditonal Transparancy
             //Blend One One // Additive
             CGPROGRAM
