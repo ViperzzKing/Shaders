@@ -7,7 +7,7 @@ public class HealthBar : MonoBehaviour
     
     void Update()
     {
-        health = Mathf.Clamp(health, 0, 1);
+        //health = Mathf.Clamp(health, 0, 1);
 
         MaterialPropertyBlock props = new MaterialPropertyBlock();
         if (props.GetFloat("_Health") != health)

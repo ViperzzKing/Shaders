@@ -15,9 +15,11 @@ Shader "Unlit/FirstTransparant"
                 // Frag Shader
             // Dst value(Destination)
                 // Render Target
-            
+
             // (Src * A)    +/-    (Dst * B)
 
+            
+            
             // (Src *1) + (Dst * 1) // Blend One One / Additive
             
             // Blend DstColor Zero // Multiplicitive
