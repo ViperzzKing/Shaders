@@ -7,10 +7,10 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BlinnPhong
-  m_Shader: {fileID: 4800000, guid: 27649196477060445ac69095367382ec, type: 3}
-  m_Parent: {fileID: 2100000, guid: ba596511c73315849a3533f882a32990, type: 2}
-  m_ModifiedSerializedProperties: 16
+  m_Name: Water
+  m_Shader: {fileID: 4800000, guid: 75998f94b444f7f48a03791a57a2c8e7, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -24,14 +24,17 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: eb7ab10862fff954a8788dad81b98af4, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _AnimSpeed: 1
-    - _Strength: 0.5
+    - _Amplitude: 0.53
+    - _Glossiness: 0.5
+    - _Metallic: 0.563
+    - _Speed: 6.07
+    - _Wavelength: 5.67
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0.2620116, g: 0.21444462, b: 0.745283, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
